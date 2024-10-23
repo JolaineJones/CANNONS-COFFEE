@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: #000000;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --white: #ffffff;
+  --light: #cadbf8;
+  --font: Poppins;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+header {
+  font-size: 3rem;
+  line-height: 1.1667;
+  background-color: var(--catalina);
+  border-bottom: 0.5rem solid var(--sunglow);
+  padding: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: normal;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+header .logo {
+  display: flex;
+}
+
+footer {
+  border-top: 0.5rem solid var(--sunglow);
+  background-color: var(--catalina);
+  text-align: center;
+  color: var(--white);
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--white);
+  line-height: 1.1667;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.1667;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.1667;
+  font-weight: normal;
+}
+.ourcoffee {
+  background-color: var(--light);
+}
+.featurecard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: var(--white);
+  align-items: center;
+}
+
+.featurebutton {
+  background-color: var(--vegan);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  gap: 2rem;
+  justify-content: center;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.125rem;
+}
+
+button {
+  background-color: var(--catalina);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+.cardsgrid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  gap: 2rem;
+  max-width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.table {
+  background-color: var(--vegan);
+}
+
+@media (min-width: 650px) {
+  .cardsgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cardsgrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
