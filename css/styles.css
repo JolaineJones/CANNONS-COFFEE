@@ -31,6 +31,7 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   padding: 0rem;
+  background-color: var(--catalina);
 }
 
 .wrapper {
@@ -144,10 +145,16 @@ button {
   .cardsgrid {
     grid-template-columns: 1fr 1fr;
   }
+  header {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1000px) {
   .cardsgrid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  header {
+    justify-content: center;
   }
 }
