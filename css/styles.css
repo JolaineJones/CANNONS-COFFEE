@@ -145,6 +145,10 @@ button {
   background-color: var(--vegan);
 }
 
+#burger-button {
+  display: none;
+}
+
 @media (min-width: 650px) {
   .cardsgrid {
     grid-template-columns: 1fr 1fr;
@@ -160,5 +164,24 @@ button {
   }
   header {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 392px) {
+  #burger-button {
+    display: block;
+    margin: 1rem auto;
+  }
+  nav ul {
+    display: none;
+  }
+  nav {
+    margin: auto;
+  }
+  svg {
+    display: none;
+  }
+  .visible {
+    display: block;
   }
 }
